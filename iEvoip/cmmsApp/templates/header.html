@@ -1,0 +1,29 @@
+{% load static %}
+{% include 'request_demo_modal.html' %}
+<header class="header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <div class="nav__data">
+      <a href="#home" class="nav__logo" data-scroll-to aria-label="iEvoip home">
+        <img src="{% static 'images/logo.png' %}" alt="iEvoip Voice and Communications" class="logo-img">
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <i class="ri-menu-line nav__burger"></i>
+        <i class="ri-close-line nav__close"></i>
+      </button>
+    </div>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="dropdown__item"><a href="#features" class="nav__link" data-scroll-to>Features</a></li>
+        <li class="dropdown__item"><a href="#how-it-works" class="nav__link" data-scroll-to>How it works</a></li>
+        <li class="dropdown__item"><a href="#about-us" class="nav__link" data-scroll-to>About</a></li>
+        <li class="dropdown__item"><a href="#contact" class="nav__link" data-scroll-to>Contact</a></li>
+        <li>
+          <button type="button" class="book-demo-btn js-open-demo">Request a Demo <i class="ri-arrow-right-circle-line"></i></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<script src="{% static 'js/header.js' %}"></script>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="iEvoip is a modern business voice and communications platform by iEngineering Australia with browser calling, smart routing, recording, messaging and AI receptionist workflows." />
+  <meta name="theme-color" content="#0b2339" />
+  <title>iEvoip | Voice &amp; Communications by iEngineering</title>
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TKQV8LKX");
+  </script>
+
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/neplan-about.css' %}">
+  <link rel="stylesheet" href="{% static 'css/consult-block.css' %}">
+  <link rel="stylesheet" href="{% static 'css/demo_form.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link rel="icon" href="{% static 'images/logo1.png' %}" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQV8LKX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  {% include 'header.html' %}
+
+  <!-- ==================== HERO ==================== -->
+  <section class="ievoip-hero" id="home">
+    <div class="ievoip-container">
+      <div class="ievoip-hero-inner">
+        <div class="ievoip-hero-left ievoip-reveal">
+          <div class="ievoip-hero-kicker"><span>Business voice, simplified</span></div>
+          <h1 class="ievoip-hero-title">One intelligent <span>phone system</span> for your business.</h1>
+          <p class="ievoip-hero-sub">
+            iEvoip brings browser-based calling, inbound and outbound voice, smart call routing, recording workflows,
+            messaging and AI receptionist capability into one modern communications experience.
+          </p>
+          <p class="ievoip-hero-sub">
+            Give your team a professional cloud-connected phone system that supports flexible working, faster call handling
+            and better visibility across customer conversations.
+          </p>
+
+          <div class="ievoip-hero-cta">
+            <a href="#features" class="ievoip-btn-primary">Explore Features</a>
+            <button type="button" class="ievoip-btn-ghost js-open-demo">Request a Demo</button>
+          </div>
+
+          <div class="ievoip-hero-stats">
+            <div class="ievoip-stat">
+              <div class="ievoip-stat-label">Calling</div>
+              <div class="ievoip-stat-value">Browser based</div>
+            </div>
+            <div class="ievoip-stat">
+              <div class="ievoip-stat-label">Deployment</div>
+              <div class="ievoip-stat-value">Cloud connected</div>
+            </div>
+            <div class="ievoip-stat">
+              <div class="ievoip-stat-label">Automation</div>
+              <div class="ievoip-stat-value">AI ready</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ievoip-hero-media ievoip-reveal">
+          <div class="ievoip-hero-card">
+            <div class="ievoip-product-preview" aria-label="iEvoip phone system preview">
+              <div class="ievoip-app-window">
+                <div class="ievoip-app-topbar">
+                  <div class="ievoip-app-dots"><i></i><i></i><i></i></div>
+                  <span>iEvoip Console</span>
+                  <span class="ievoip-ready-pill">Ready</span>
+                </div>
+                <div class="ievoip-app-body">
+                  <aside class="ievoip-app-side" aria-hidden="true">
+                    <img src="{% static 'images/ie-logo.png' %}" alt="">
+                    <i class="active"></i><i></i><i></i><i></i><i></i>
+                  </aside>
+                  <div class="ievoip-softphone">
+                    <p class="ievoip-panel-label">Softphone</p>
+                    <div class="ievoip-avatar">IE</div>
+                    <h4>Business Calling</h4>
+                    <p class="ievoip-number">+61 ••• ••• •••</p>
+                    <div class="ievoip-dial-grid" aria-hidden="true">
+                      <span>1</span><span>2</span><span>3</span>
+                      <span>4</span><span>5</span><span>6</span>
+                      <span>7</span><span>8</span><span>9</span>
+                      <span>*</span><span>0</span><span>#</span>
+                    </div>
+                    <div class="ievoip-call-btn" aria-hidden="true">☎</div>
+                  </div>
+                  <div class="ievoip-activity">
+                    <h4>Live activity</h4>
+                    <div class="ievoip-activity-row"><span>Outbound</span><strong>24</strong></div>
+                    <div class="ievoip-activity-row"><span>Inbound</span><strong>18</strong></div>
+                    <div class="ievoip-activity-row"><span>AI handled</span><strong>07</strong></div>
+                    <div class="ievoip-ai-card">
+                      <span>AI Receptionist</span>
+                      <strong>Available</strong>
+                      <small>Answer, assist and route callers.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ievoip-hero-meta">
+              <h3>One connected communications experience</h3>
+              <p>Bring calls, routing, history, recordings, messaging and AI-assisted workflows into one interface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="ievoip-types" id="features">
+    <div class="ievoip-container">
+      <div class="ievoip-types-head">
+        <div>
+          <div class="ievoip-types-kicker">Product capabilities</div>
+          <h2 class="ievoip-types-title">Everything your team needs to communicate professionally</h2>
+        </div>
+        <p class="ievoip-types-sub">
+          Bring business calling and communication workflows into one streamlined interface designed for modern teams.
+        </p>
+      </div>
+
+      <div class="ievoip-types-grid">
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="ievoip-type-tag"><span>Voice</span></div>
+          <h3 class="ievoip-type-title">Inbound &amp; Outbound Calling</h3>
+          <p class="ievoip-type-text">Manage incoming and outgoing business calls through a consistent cloud-based workflow.</p>
+          <div class="ievoip-type-meta"><span>Business voice</span><span>Cloud connected</span></div>
+        </article>
+
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-display"></i></div>
+          <div class="ievoip-type-tag"><span>Softphone</span></div>
+          <h3 class="ievoip-type-title">Browser Softphone</h3>
+          <p class="ievoip-type-text">Enable staff to make and receive calls from a supported web browser without a traditional desk phone.</p>
+          <div class="ievoip-type-meta"><span>Workstation calling</span><span>Flexible access</span></div>
+        </article>
+
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div class="ievoip-type-tag"><span>Routing</span></div>
+          <h3 class="ievoip-type-title">Smart Call Routing</h3>
+          <p class="ievoip-type-text">Direct callers to the right person, team or workflow using configurable routing and transfer logic.</p>
+          <div class="ievoip-type-meta"><span>Teams</span><span>Transfers</span></div>
+        </article>
+
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-circle-dot"></i></div>
+          <div class="ievoip-type-tag"><span>Visibility</span></div>
+          <h3 class="ievoip-type-title">Call Recording Workflows</h3>
+          <p class="ievoip-type-text">Support call recording, call history and conversation review for quality and operational visibility.</p>
+          <div class="ievoip-type-meta"><span>Call history</span><span>Recordings</span></div>
+        </article>
+
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="ievoip-type-tag"><span>AI</span></div>
+          <h3 class="ievoip-type-title">AI Receptionist</h3>
+          <p class="ievoip-type-text">Automate first-response conversations, collect caller details and assist with routing and common requests.</p>
+          <div class="ievoip-type-meta"><span>First response</span><span>Automation</span></div>
+        </article>
+
+        <article class="ievoip-type-card ievoip-reveal">
+          <div class="ievoip-feature-icon"><i class="fa-solid fa-message"></i></div>
+          <div class="ievoip-type-tag"><span>Messaging</span></div>
+          <h3 class="ievoip-type-title">Messaging Ready</h3>
+          <p class="ievoip-type-text">Extend customer communication with SMS-enabled workflows alongside your voice operations.</p>
+          <div class="ievoip-type-meta"><span>SMS</span><span>Unified communication</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="ievoip-overview" id="how-it-works">
+    <div class="ievoip-container">
+      <div class="ievoip-overview-grid">
+        <div class="ievoip-overview-main ievoip-reveal">
+          <p class="ievoip-eyebrow">How it works</p>
+          <h2 class="ievoip-section-title">From incoming call to the right outcome</h2>
+          <p class="ievoip-section-text">
+            iEvoip connects callers, staff and automation in one flow. A conversation can be answered by a team member,
+            transferred to another person or team, or initially handled by an AI receptionist.
+          </p>
+          <p class="ievoip-section-text">
+            Your team stays connected through the browser softphone while call activity, history and supporting workflows remain visible in the phone-system experience.
+          </p>
+          <ul class="ievoip-check-list">
+            <li><span class="ievoip-check-dot"></span>Customer calls your business number</li>
+            <li><span class="ievoip-check-dot"></span>Rules or AI identify the request and route it</li>
+            <li><span class="ievoip-check-dot"></span>Your team answers through the browser softphone or configured destination</li>
+            <li><span class="ievoip-check-dot"></span>Call activity remains available for operational visibility</li>
+          </ul>
+        </div>
+
+        <aside class="ievoip-how-card ievoip-reveal" aria-label="iEvoip call flow">
+          <div class="ievoip-how-step"><b>01</b><div><h3>Call arrives</h3><p>A customer contacts your business number.</p></div></div>
+          <div class="ievoip-how-step"><b>02</b><div><h3>Identify &amp; route</h3><p>Use rules or AI workflows to understand the request and route it correctly.</p></div></div>
+          <div class="ievoip-how-step"><b>03</b><div><h3>Connect your team</h3><p>Staff answer through the browser softphone or configured destination.</p></div></div>
+          <div class="ievoip-how-step"><b>04</b><div><h3>Keep visibility</h3><p>Track call activity through the iEvoip console and connected services.</p></div></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHO IT IS FOR ==================== -->
+  <section class="ievoip-industries" id="use-cases">
+    <div class="ievoip-container">
+      <div class="ievoip-industries-header ievoip-reveal">
+        <p class="ievoip-eyebrow">Designed for modern teams</p>
+        <h2 class="ievoip-section-title">A practical phone system for distributed business operations</h2>
+        <p>iEvoip can support teams that need professional calling, consistent routing and better communication visibility across locations.</p>
+      </div>
+
+      <div class="ievoip-industries-grid">
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Engineering Teams</h3><p class="ievoip-industry-text">Keep project, support and client calls connected across office and remote staff.</p></article>
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Utilities</h3><p class="ievoip-industry-text">Route operational and customer enquiries to the right team with clear call handling.</p></article>
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Facilities</h3><p class="ievoip-industry-text">Create a consistent contact point for facilities, maintenance and service requests.</p></article>
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Industrial Businesses</h3><p class="ievoip-industry-text">Connect office, technical and service teams through one business communications workflow.</p></article>
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Service Teams</h3><p class="ievoip-industry-text">Improve inbound call handling, transfers and follow-up visibility for customer-facing staff.</p></article>
+        <article class="ievoip-industry-card ievoip-reveal"><h3 class="ievoip-industry-title">Multi-location Organisations</h3><p class="ievoip-industry-text">Support distributed staff with browser-based calling and configurable call routing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about-us" class="cmms-contact-form-wrap">
+    <div class="cmms-contact-form-inner">
+      <p class="eyebrow-neplan-what-we-bring">About us</p>
+      <h2 class="title-meet-ieng-about">Engineering experience behind a practical communications product.</h2>
+      <p class="about-text-abou-ieng">
+        iEngineering Australia is a multidisciplinary engineering business delivering electrical, energy, infrastructure,
+        software and industrial technology solutions. Operating across Australia, Fiji and India, the company focuses on
+        practical, standards-aligned solutions and long-term client support. iEvoip extends that capability into modern business voice and communications.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== MISSION / VISION / VALUES ==================== -->
+  <section class="ievoip-mvv-section" id="mission">
+    <div class="ievoip-container">
+      <div class="ievoip-mvv-tabs" role="tablist" aria-label="Company principles">
+        <button class="ievoip-mvv-tab is-active" data-tab="mission" type="button">Mission</button>
+        <button class="ievoip-mvv-tab" data-tab="vision" type="button">Vision</button>
+        <button class="ievoip-mvv-tab" data-tab="values" type="button">Values</button>
+      </div>
+
+      <div class="ievoip-mvv-content-wrap">
+        <div class="ievoip-mvv-content is-active" data-tab="mission">
+          <div class="ievoip-mvv-text">
+            <h2>Our Mission</h2>
+            <p>At iEngineering Australia, our mission is to enhance efficiency, ensure quality control, and deliver customer satisfaction through innovative engineering and technology solutions that create long-term value.</p>
+          </div>
+          <div class="ievoip-mvv-image"><img src="{% static 'images/mission.avif' %}" alt="Mission graphic" loading="lazy"></div>
+        </div>
+
+        <div class="ievoip-mvv-content" data-tab="vision">
+          <div class="ievoip-mvv-text">
+            <h2>Our Vision</h2>
+            <p>To be a trusted engineering and technology partner delivering intelligent, resilient and future-ready infrastructure and digital solutions across Australia, Fiji, India and the Pacific.</p>
+          </div>
+          <div class="ievoip-mvv-image"><img src="{% static 'images/vision.avif' %}" alt="Vision graphic" loading="lazy"></div>
+        </div>
+
+        <div class="ievoip-mvv-content" data-tab="values">
+          <div class="ievoip-mvv-text">
+            <h2>Our Values</h2>
+            <p>We operate with integrity, safety and accountability. Our team focuses on practical innovation, clear communication, technical excellence and long-term partnerships so every solution delivers meaningful operational value.</p>
+          </div>
+          <div class="ievoip-mvv-image"><img src="{% static 'images/values.avif' %}" alt="Core values graphic" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cmms-contact-form-wrap" id="journey">
+    <div class="cmms-contact-form-inner">
+      <p class="eyebrow-neplan-what-we-bring">Our Journey</p>
+      <p class="about-text-abou-ieng">
+        Founded in 2013, iEngineering Australia has grown across engineering, infrastructure, software and industrial technology delivery.
+        iEvoip brings that practical delivery approach into business communications by combining cloud voice, browser calling and automation into a system built around real operational workflows.
+      </p>
+    </div>
+  </section>
+
+  <section class="cmms-contact-form-wrap" id="where-we-operate">
+    <div class="cmms-contact-form-inner">
+      <p class="eyebrow-neplan-what-we-bring">Where We Operate</p>
+      <p class="about-text-abou-ieng">iEngineering Australia operates across Australia, Fiji and India, supporting organisations with engineering, technology and asset-management solutions.</p>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATIONS ==================== -->
+  <section class="ieng-locations" id="locations">
+    <div class="ieng-container">
+      <div class="ieng-loc-grid">
+        <article class="ieng-loc-card ieng-loc-card--au">
+          <header class="ieng-loc-head"><span class="ieng-loc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor" /></svg></span><h4 class="ieng-loc-title">Australia – Sydney</h4></header>
+          <p class="ieng-loc-row"><strong>Phone:</strong> +61 (02) 8318 1490</p>
+          <p class="ieng-loc-row"><strong>Email:</strong> <a href="mailto:enquiries@iengaust.com.au">enquiries@iengaust.com.au</a></p>
+          <p class="ieng-loc-address">Rooty Hill,NSW 2766, Australia</p>
+          <a class="ieng-loc-btn" target="_blank" rel="noopener" href="https://www.google.com/maps?ll=-33.723524,150.875902&z=5&t=m&hl=en-US&gl=US&mapclient=embed&cid=2860432314088839065">View map</a>
+        </article>
+
+        <article class="ieng-loc-card ieng-loc-card--in">
+          <header class="ieng-loc-head"><span class="ieng-loc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor" /></svg></span><h4 class="ieng-loc-title">India – Pune</h4></header>
+          <p class="ieng-loc-row"><strong>Phone:</strong> +91 9168627258</p>
+          <p class="ieng-loc-row"><strong>Email:</strong> <a href="mailto:shila@iengaust.com.au">shila@iengaust.com.au</a></p>
+          <p class="ieng-loc-address">Navale IT Zone, Office No. 501, 5th Floor, A-Wing, Near Navale Bridge, Mumbai-Bangalore Highway, Narhe, Pune – 411041.</p>
+          <a class="ieng-loc-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Navale+IT+Zone+Phase2/@18.4597518,73.8199254,17z/">View map</a>
+        </article>
+
+        <article class="ieng-loc-card ieng-loc-card--fj">
+          <header class="ieng-loc-head"><span class="ieng-loc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor" /></svg></span><h4 class="ieng-loc-title">Fiji – Suva</h4></header>
+          <p class="ieng-loc-row"><strong>Phone:</strong> +679 9488589</p>
+          <p class="ieng-loc-row"><strong>Email:</strong> <a href="mailto:enquiries@iengaust.com.au">enquiries@iengaust.com.au</a></p>
+          <p class="ieng-loc-address">Suva, Fiji.</p>
+          <a class="ieng-loc-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/Lot+17,+River+Drive+Pacific+Harbour+Navua+Suva+Fiji/">View map</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    {% include "components/contact_block.html" with form_only=True %}
+  </section>
+
+  {% include 'footer.html' %}
+
+  <script defer src="{% static 'js/demo_form.js' %}"></script>
+  <script defer src="{% static 'js/main.js' %}"></script>
+
+  <script>
+    (function () {
+      const els = document.querySelectorAll('.ievoip-reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach((el) => el.classList.add('is-visible'));
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach((el) => observer.observe(el));
+    })();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.ievoip-mvv-tab');
+      const panels = document.querySelectorAll('.ievoip-mvv-content');
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          tabs.forEach((t) => t.classList.toggle('is-active', t === tab));
+          panels.forEach((panel) => panel.classList.toggle('is-active', panel.dataset.tab === target));
+        });
+      });
+    });
+  </script>
+</body>
+</html>
