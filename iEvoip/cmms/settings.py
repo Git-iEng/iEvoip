@@ -67,10 +67,9 @@ if not SECRET_KEY:
 # ============================================================
 
 ALLOWED_HOSTS = [
-    "solar.ieng.tech",
-    ".ieng.tech",
-    "127.0.0.1",
-    "localhost",
+    '127.0.0.1',
+    'localhost',
+    '192.168.1.55',
 ]
 
 
