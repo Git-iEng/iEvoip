@@ -66,10 +66,12 @@ if not SECRET_KEY:
 # ALLOWED HOSTS
 # ============================================================
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['ievoipweb.ieng.tech',
+    'ieng.tech',
     '127.0.0.1',
     'localhost',
     '192.168.1.55',
+
 ]
 
 
