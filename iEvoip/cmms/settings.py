@@ -67,11 +67,7 @@ if not SECRET_KEY:
 # ============================================================
 
 ALLOWED_HOSTS = ['ievoipweb.ieng.tech',
-    'ieng.tech',
-    '127.0.0.1',
-    'localhost',
-    '192.168.1.55',
-
+    'ieng.tech'
 ]
 
 
@@ -111,6 +107,7 @@ else:
 # ============================================================
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://ievoipweb.ieng.tech",
     "https://solar.ieng.tech",
     "https://*.ieng.tech",
 ]
@@ -130,7 +127,7 @@ SESSION_ENGINE = (
     "django.contrib.sessions.backends.signed_cookies"
 )
 
-SESSION_COOKIE_NAME = "solar_sessionid"
+SESSION_COOKIE_NAME = "ievoip_sessionid"
 
 SESSION_COOKIE_HTTPONLY = True
 
